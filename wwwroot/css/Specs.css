@@ -1,0 +1,134 @@
+﻿p.text {
+    margin-left: 450px;
+    border: 3px solid purple;
+    border-radius: 30px;
+    width: 450px;
+    text-align: center;
+    background-color: purple;
+}
+
+.row {
+    margin-top: 100px;
+}
+
+.header {
+    color: white;
+    margin-left: 355px;
+    font-size: 50px;
+}
+
+body {
+    background-color: black;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+}
+
+to {
+    opacity: 1;
+    scale: 1;
+}
+
+.scroll {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+p {
+    color: aliceblue;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+p.MBHeader {
+    color: aliceblue;
+    text-align: center;
+    font-size: 50px;
+}
+
+p.Motherboard {
+    color: aliceblue;
+    text-align: center;
+    font-weight: 900;
+}
+
+p.motherboardDetails {
+    color: aliceblue;
+    text-align: center;
+    font-weight: 900;
+}
+
+p.GPUHeader {
+    color: aliceblue;
+    text-align: center;
+    font-size: 50px;
+}
+
+p.GPU {
+    color: aliceblue;
+    text-align: center;
+    font-weight: 900;
+}
+
+p.GPURank {
+    color: aliceblue;
+    text-align: center;
+    font-weight: 900;
+}
+
+p.GPUDetails {
+    color: aliceblue;
+    text-align: center;
+    font-size: medium;
+    font-weight: 900;
+}
+
+p.CPUHeader {
+    color: aliceblue;
+    text-align: center;
+    font-size: 50px;
+}
+
+p.CPU {
+    color: aliceblue;
+    text-align: center;
+    font-weight: 900;
+}
+
+p.CPUDetails {
+    color: aliceblue;
+    text-align: center;
+    font-weight: 900;
+}
+
+p.CPURank {
+    color: aliceblue;
+    text-align: center;
+    font-weight: 900;
+}
+
+p.RAMHeader {
+    color: aliceblue;
+    text-align: center;
+    font-size: 50px;
+}
+
+p.RAM {
+    color: aliceblue;
+    text-align: center;
+    font-weight: 900;
+}
+
+p.RAMDetails {
+    color: aliceblue;
+    text-align: center;
+    font-weight: 900;
+}

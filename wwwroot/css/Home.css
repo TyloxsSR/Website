@@ -1,0 +1,264 @@
+﻿
+.portrait {
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 200px;
+    display: block;
+    margin-top: 100px;
+    position: relative;
+    top: -10px;
+    left: 515px;
+    height: 300px;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+}
+
+to {
+    opacity: 1;
+    scale: 1;
+}
+
+.scroll {
+    animation: appear 2s linear;
+}
+
+p.biography {
+    font-weight: 900;
+    text-align: center;
+
+}
+
+.btnOne {
+    position: relative;
+    left: 600px;
+
+}
+
+.btnTwo {
+    position: relative;
+    left: 370px;
+    top: -254px;
+}
+
+.rows {
+    margin-top: -60px;
+    margin-left: 5px;
+}
+
+.btn {
+    margin: 100px;
+    padding: 15px 40px;
+    border: none;
+    outline: none;
+    color: #FFF;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 12px;
+}
+
+    .btn::after {
+        content: "";
+        z-index: -1;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #201f20;
+        left: 0;
+        top: 0;
+        border-radius: 10px;
+    }
+
+    /* glow */
+    .btn::before {
+        content: "";
+        background: linear-gradient( 45deg, #000000, #000000, #000000, #000000, #000000, #000000, #000000, #000000 );
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        background-size: 600%;
+        z-index: -1;
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        filter: blur(6px);
+        transition: opacity .2s ease-in-out;
+        border-radius: 10px;
+        opacity: 0;
+    }
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+/* hover */
+.btn:hover::before {
+    opacity: 1;
+}
+
+.btn:active:after {
+    background: transparent;
+}
+
+.btn:active {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/*Education Section*/
+
+.education-content {
+    position: relative;
+    top: -150px;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.education-header{
+    text-align:center;
+}
+
+.elementary-header {
+    border: 3px solid transparent;
+    width: 180px;
+    position: relative;
+    top: 30px;
+}
+
+.middle-header {
+    border: 3px solid transparent;
+    width: 110px;
+    position: relative;
+    top: -306px;
+    left: 590px;
+}
+
+.high-header {
+    border: 3px solid transparent;
+    width: 80px;
+    position: relative;
+    top: -593px;
+    left: 1150px;
+}
+
+.elementary-bio {
+    border: 3px solid transparent;
+    width: 500px;
+    margin-left: -150px;
+    position: relative;
+    top: 50px;
+}
+
+.middle-bio {
+    border: 3px solid transparent;
+    width: 500px;
+    position: relative;
+    top: -285px;
+    left: 400px;
+}
+
+.high-bio {
+    border: 3px solid transparent;
+    width: 500px;
+    position: relative;
+    top: -572px;
+    left: 950px;
+}
+
+.muller {
+    border-radius: 10px;
+    position: relative;
+    width: 500px;
+    height: 300px;
+    top: -560px;
+    right: 150px;
+}
+
+.davidsen {
+    border-radius: 10px;
+    position: relative;
+    width: 500px;
+    height: 300px;
+    top: -560px;
+    right: 110px;
+}
+
+.alonso {
+    border-radius: 10px;
+    position: relative;
+    width: 500px;
+    height: 300px;
+    top: -860px;
+    left: 950px;
+}
+
+/*Hobbies*/
+.hobbies-header {
+    position: relative;
+    top: -750px;
+    left: 560px;
+}
+
+
+.speedrunner-bio {
+    border: 3px solid transparent;
+    width: 600px;
+    position: relative;
+    top: -700px;
+    left: 350px;
+}
+
+/*Speedrunning Images*/
+.speedrunning-img {
+    position: relative;
+    top: -650px;
+    left: 80px;
+}
+
+.zelda {
+    position: relative;
+    top: -650px;
+    left: 45px;
+}
+
+.harry-potter {
+    position: relative;
+    top: -650px;
+    left: -30px;
+}
+
+.records {
+    text-align: center;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    top: -650px;
+}
+
+.comment {
+    text-align: center;
+    position: relative;
+    top: -630px;
+}
+
+.charity-speedruns {
+    text-align: center;
+    position: relative;
+    top: -600px;
+}

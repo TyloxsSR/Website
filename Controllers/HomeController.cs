@@ -1,5 +1,6 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using Website.Helpers;
 using Website.Models;
 
 namespace Website.Controllers;
@@ -15,11 +16,18 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        int Age = HomeModel.Calculate(new DateTime(2001,4, 6));
-        int DeveloperAge = HomeModel.Calculate(new DateTime(2023, 2, 28));
+        int Age = AgeHelper.Calculate(new DateTime(2001,4, 6));
+        int DeveloperAge = AgeHelper.Calculate(new DateTime(2023, 2, 28));
+
+        AgeModel model = new AgeModel()
+        {
+            MyAge = Age,
+            DeveloperAge = DeveloperAge
+        };
+
         ViewBag.Age = Age;
         ViewBag.DeveloperAge = DeveloperAge;
-        return View();
+        return View(model);
     }
 
     public IActionResult Privacy()

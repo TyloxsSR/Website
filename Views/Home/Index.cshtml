@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@model Website.Models.AgeModel
+
+<!DOCTYPE html>
 <!---->
 <html lang="us">
 <head>
@@ -21,9 +23,9 @@
 
 <!--About-->
 <p class="biography">ABOUT ME:
-<p class="biography">Age: @ViewBag.Age</p>                                  
+<p class="biography">Age: @Model.MyAge</p>                                  
 <p class="biography">Self Taught Programmer (WIP)</p>
-<p class="biography">Years in learning: @ViewBag.DeveloperAge</p>
+<p class="biography">Years in learning: @Model.DeveloperAge</p>
 
 <!--Buttons-->
 

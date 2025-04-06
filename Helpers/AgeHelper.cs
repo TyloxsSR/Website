@@ -1,6 +1,6 @@
-﻿namespace Website.Models
+﻿namespace Website.Helpers
 {
-    public static class HomeModel
+    public static class AgeHelper
     {
         public static int Calculate(DateTime birthdate)
         {

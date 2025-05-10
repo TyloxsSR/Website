@@ -287,5 +287,6 @@ C:\Users\Tylox\source\repos\Website\Website\obj\Debug\net9.0\compressed\21pnw6pj
 C:\Users\Tylox\source\repos\Website\Website\obj\Debug\net9.0\compressed\ab3jli2qjp-99mhte8rhx.gz
 C:\Users\Tylox\source\repos\Website\Website\obj\Debug\net9.0\compressed\tfj09pooid-n3utj9hcgm.gz
 C:\Users\Tylox\source\repos\Website\Website\obj\Debug\net9.0\compressed\tepfgnhovq-k0hywssul9.gz
-C:\Users\Tylox\source\repos\Website\Website\obj\Debug\net9.0\compressed\41w4dtz47h-4alhwwdymo.gz
 C:\Users\Tylox\source\repos\Website\Website\obj\Debug\net9.0\compressed\vms9gik6ma-wgz1j027rr.gz
+C:\Users\Tylox\source\repos\Website\Website\obj\Debug\net9.0\Website.sourcelink.json
+C:\Users\Tylox\source\repos\Website\Website\obj\Debug\net9.0\compressed\41w4dtz47h-dl324j0g24.gz

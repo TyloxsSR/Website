@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@model Website.Models.AboutMeModel
+
+<!DOCTYPE html>
 <!---->
 <html lang="us">
 <head>
@@ -21,103 +23,113 @@
 
 <!--About-->
 <p class="biography">ABOUT ME:
-<p class="biography">Age: @ViewBag.Age</p>                                  
-<p class="biography">Self Taught Programmer (WIP)</p>
-<p class="biography">Years in learning: @ViewBag.DeveloperAge</p>
+    <p class="biography">Age: @Model.MyAge</p>                                  
+    <p class="biography">Self Taught Programmer (WIP)</p>
+    <p class="biography">Years in learning: @Model.DeveloperAge</p>
+    
+    <!--Buttons-->
 
-<!--Buttons-->
-
-<div class="btnOne">
-    <button class="btn" onclick="PortfolioLink(this)" value="https://localhost:7256/portfolio">Portfolio</button>
-</div>
-                                                                                                                    
-<div class="btnTwo">
-    <button class="btn" onclick="SpecsLink(this)" value="https://localhost:7256/specs">PC Setup</button>
-</div>
-
-<!---Education--->
-<div class="education-content">
-    <h1 class="education-header">Education</h1>
-
-    <div class="elementary-header">
-        <h2>Elementary</h2>
+    <div class="btnOne">
+        <button class="btn" onclick="PortfolioLink(this)" value="https://localhost:7256/portfolio">Portfolio</button>
     </div>
 
-    <div class="elementary-bio">
-        <p>
-            When I was around the age of 6, I begun learning at Muller Magnet Elementary school!
-            This school recieved the National award of merit for 2025!
-            I recieved general education here as any typical american student does.
-            Nothing crazy or suprising there, but I did recieve some accolades here and there.
-            Such as winning a science award for a robot I created with another student!
-            Sadly that robot wasn't ours to keep so it has been lost to time.
-            A memorable moment that I had here was being the only student in my 4th grade class to recieve an autograph from a hollywood celebrity for an assignment designed to be a long distance letter sent to a famous person of our choice.
-            Sadly no one in my class recieved one back, except me!
-        </p>
+    <div class="btnTwo">
+        <button class="btn" onclick="SpecsLink(this)" value="https://localhost:7256/specs">PC Setup</button>
     </div>
 
-    <div class="middle-header">
-        <h2>Middle</h2>
-    </div>
+    <!---Education--->
+    <div class="education-content">
+        <h1 class="education-header">Education</h1>
 
-    <div class="middle-bio">
-        <p>
-            By the time I was 12 or 13 I migrated over to Davidsen Middle School!
-            I don't have too many memories here, however I do remember getting better at my Math Skills which helped me in my future programming ventures!
-            Before I was ever introduced to Algebra, I struggled pretty hard with Math.
-            But these days Algebra remains my favorite math subject which will certaintly come in handy in this business!
-            I can confidently say if it weren't for my growth in algebra and math during this time, I probably couldn't grasp programming. Yet here we are!
-        </p>
-    </div>
-
-    <div class="high-header">
-        <h2>High</h2>
-    </div>
-
-    <div class="high-bio">
-        <p>
-            Fast forward 3 years and I entered Alonso High School!
-            I recieved the honor roll 4 times and acquired straight A's during my incumbency.
-            It is something that is still a mystery to me, but it seems as if during my time during middle school that my work ethic and mentality shifted for the better.
-            I also gained personal achievements as well!
-            I held 3 World Records doing a hobby I dabbled in during my free time when I was away from school called Speedrunning!
-            I also participated in some speedrunning charity events during my time as a Speedrunner!
-            Overall, I came out a B student with all this! All I can say is, this wasn't/isn't my final form. I intend to grow further.
-        </p>
-    </div>
-
-
-    <img class="muller" src="~/img/muller.png" />
-    <img class="davidsen" src="~/img/davidson.png" />
-    <img class="alonso" src="~/img/alonso.png" />
-
-
-
-
-    <h1 class="hobbies-header">Hobbies</h1>
-
-
-    <p class="speedrunner-bio">
-        I have many hobbies! I really love to exercise to keep myself fit!
-        One of my bigger hobbies that I used to do was something called Speedrunning.
-        Which I brefly mentioned before!
-        This is a competitive E-sport with the goal of beating a game as fast
-        as humanly possible. These personal bests and records are recorded on
-        websites to track what the world record may be at any given point in time.
-        My Speedrunning career lasted for 4 years during 2017-2020. I stopped due to time constraints!
-        Overall, I have achieved 10 World Records during my time as a speedrunner for some pretty big games!
-        Below is a comprehenive list of every big game I have ran; plus some honorable mentiones!
-    </p>
-
-    <div class="gow">
-        <div class="speedrunning-img">
-            <img src="/img/gow.png">
+        <div class="elementary-header">
+            <h2>Elementary</h2>
         </div>
 
-        <div class="records">
-            <li>God of War Any% in 4:30:26【Former World Record & Personal Best】(achieved on April 6, 2019)</li>
-            <li>God of War Any% in 4:34:23</li>
-            <li>God of War Any% in 4:39:08 (achieved on March 7, 2019)</li>
+        <div class="elementary-bio">
+            <p>
+                @Model.ElementaryBio            
+            </p>
+        </div>
+
+        <div class="middle-header">
+            <h2>Middle</h2>
+        </div>
+
+        <div class="middle-bio">
+            <p>
+                @Model.MiddleBio
+            </p>
+        </div>
+
+        <div class="high-header">
+            <h2>High</h2>
+        </div>
+
+        <div class="high-bio">
+            <p>
+                @Model.HighBio
+            </p>
+        </div>
+
+
+        <img class="muller" src="~/img/muller.png" />
+        <img class="davidsen" src="~/img/davidson.png" />
+        <img class="alonso" src="~/img/alonso.png" />
+
+
+
+
+        <h1 class="hobbies-header">Hobbies</h1>
+
+
+        <p class="speedrunner-bio">
+            @Model.SpeedrunnerBio
+        </p>
+        @* TODO: MAKE TABLES FOR MY RECORDS*@
+        <div class="gow">
+            <div class="speedrunning-img">
+                <img src="/img/gow.png">
+            </div>
+
+
+
+            <div class="records">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Game</th>
+                            <th>Category</th>
+                            <th>Time</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>@Model.GameName[0]</td>
+                            <td>@Model.Category[0]</td>
+                            <td>@Model.GodOfWarRecords[0]</td>
+                            <td>March 7, 2019</td>
+                            <td>Personal Best</td>
+                        </tr>
+                        <tr>
+                            <td>@Model.GameName[0]</td>
+                            <td>@Model.Category[0]</td>
+                            <td>@Model.GodOfWarRecords[1]</td>
+                            <td>Unknown</td>
+                            <td>Personal Best</td>
+                        </tr>
+                        <tr>
+                            <td>@Model.GameName[0]</td>
+                            <td>@Model.Category[0]</td>
+                            <td>@Model.GodOfWarRecords[2]</td>
+                            <td>April 6, 2019</td>
+                            <td>World Record + Personal Best</td>
+                        </tr>
+                </tbody>
+            </table>
         </div>
     </div>
     
@@ -126,47 +138,216 @@
             <img src="/img/daysgone.png">
         </div>
 
-        <div class="records">
-            <!---Does this class attribute break dry?--->
-            <li>Days Gone in 17:18:32【Former World Record & Personal Best】(achieved in April of 2019)</li>
+        <div class="records2">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Game</th>
+                        <th>Category</th>
+                        <th>Time</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                        </div>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>@Model.GameName[1]</td>
+                        <td>@Model.Category[0]</td>
+                        <td>@Model.DaysGoneRecords</td>
+                        <td>March 7, 2019</td>
+                        <td>Personal Best</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
-
+    
 
     <div class="zelda">
         <img src="/img/tp.png">
     </div>
 
-    <div class="records">
+    <div class="records3">
         <!---Does this class attribute break dry?--->
-        <li>The Legend of Zelda: Twilight Princess HD Any% in 3:36:09 (5 years ago)</li>
-        <li>The Legend of Zelda: Twilight Princess HD Any% in 3:40:08 (5 years ago)</li>
-        <li>The Legend of Zelda: Twilight Princess HD All Dungeons in 4:32:57 (6 years ago)</li>
-        <li>The Legend of Zelda: Twilight Princess HD Goron Mines RTA in 1:22:34【Former World Record】(6 years ago)</li>
-        <li>The Legend of Zelda: Twilight Princess HD Glitchless Master Sword in 2:38:08 【Former World Record】(6 years ago)</li>
-        <li>The Legend of Zelda: Twilight Princess HD Any% in 3:42:05 (6 years ago)</li>
-        <li>The Legend of Zelda: Twilight Princess HD Any% in 3:43:30 (7 years ago)</li>
-        <li>The Legend of Zelda: Twilight Princess HD Any% in 3:43:58 (7 years ago)</li>
-        <li>The Legend of Zelda: Twilight Princess HD Any% in 3:45:57 (7 years ago)</li>
-        <li>The Legend of Zelda: Twilight Princess HD 100% in 8:07:48 (7 years ago)</li>
-        <li>The Legend of Zelda: Twilight Princess HD All Dungeons in 4:37:10【Former World Record】(7 years ago)</li>
-        <li>The Legend of Zelda: Twilight Princess HD Goron Mines RTA in 1:24:15 (7 years ago)</li>
-        <li>The Legend of Zelda: Twilight Princess HD All Dungeons in 4:46:49【Former World Record】(7 years ago)</li>
-        <li>The Legend of Zelda: Twilight Princess HD Any% in 3:46:25 (7 years ago)</li>
-        <li>The Legend of Zelda: Twilight Princess HD Any% (No Amiibo) in 3:48:59 【Former World Record】(7 years ago)</li>
-        <li>The Legend of Zelda: Twilight Princess HD Goron Mines RTA in 1:24:36 (7 years ago)</li>
-        <li>The Legend of Zelda: Twilight Princess HD Any% in 3:57:49 (7 years ago)</li>
+        <table>
+            <thead>
+                <tr>
+                    <th>Game</th>
+                    <th>Category</th>
+                    <th>Time</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>@Model.GameName[2]</td>
+                    <td>@Model.Category[0]</td>
+                    <td>@Model.TPAnyPercentWithAmiiboRecords[0]</td>
+                    <td>7 Years Ago</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>@Model.GameName[2]</td>
+                    <td>@Model.Category[1]</td>
+                    <td>@Model.TPAnyPercentRecords</td>
+                    <td>7 Years Ago</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>@Model.GameName[2]</td>
+                    <td>@Model.Category[0]</td>
+                    <td>@Model.TPAnyPercentWithAmiiboRecords[1]</td>
+                    <td>7 Years Ago</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>@Model.GameName[2]</td>
+                    <td>@Model.Category[0]</td>
+                    <td>@Model.TPAnyPercentWithAmiiboRecords[2]</td>
+                    <td>7 Years Ago</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>@Model.GameName[2]</td>
+                    <td>@Model.Category[0]</td>
+                    <td>@Model.TPAnyPercentWithAmiiboRecords[3]</td>
+                    <td>7 Years Ago</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>@Model.GameName[2]</td>
+                    <td>@Model.Category[0]</td>
+                    <td>@Model.TPAnyPercentWithAmiiboRecords[4]</td>
+                    <td>7 Years Ago</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>@Model.GameName[2]</td>
+                    <td>@Model.Category[0]</td>
+                    <td>@Model.TPAnyPercentWithAmiiboRecords[5]</td>
+                    <td>7 Years Ago</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>@Model.GameName[2]</td>
+                    <td>@Model.Category[0]</td>
+                    <td>@Model.TPAnyPercentWithAmiiboRecords[6]</td>
+                    <td>6 Years Ago</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>@Model.GameName[2]</td>
+                    <td>@Model.Category[0]</td>
+                    <td>@Model.TPAnyPercentWithAmiiboRecords[7]</td>
+                    <td>6 Years Ago</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>@Model.GameName[2]</td>
+                    <td>@Model.Category[2]</td>
+                    <td>@Model.TP100PercentRecords</td>
+                    <td>7 Years Ago</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>@Model.GameName[2]</td>
+                    <td>@Model.Category[3]</td>
+                    <td>@Model.TPAllDungeonsRecords[0]</td>
+                    <td>7 Years Ago</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>@Model.GameName[2]</td>
+                    <td>@Model.Category[3]</td>
+                    <td>@Model.TPAllDungeonsRecords[1]</td>
+                    <td>7 Years Ago</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>@Model.GameName[2]</td>
+                    <td>@Model.Category[3]</td>
+                    <td>@Model.TPAllDungeonsRecords[2]</td>
+                    <td>6 Years Ago</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>@Model.GameName[2]</td>
+                    <td>@Model.Category[4]</td>
+                    <td>@Model.TPGlitchlessRecords</td>
+                    <td>6 Years Ago</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>@Model.GameName[2]</td>
+                    <td>@Model.Category[5]</td>
+                    <td>@Model.TPGoronMinesRTARecords[0]</td>
+                    <td>7 Years Ago</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>@Model.GameName[2]</td>
+                    <td>@Model.Category[5]</td>
+                    <td>@Model.TPGoronMinesRTARecords[1]</td>
+                    <td>7 Years Ago</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>@Model.GameName[2]</td>
+                    <td>@Model.Category[5]</td>
+                    <td>@Model.TPGoronMinesRTARecords[2]</td>
+                    <td>6 Years Ago</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
     <div class="harry-potter">
         <img src="/img/harrypotter.png">
     </div>
 
-    <div class="records">
-        <!---Does this class attribute break dry?--->
-        <li>Harry Potter and the Deathly Hallows: Part 2 in 1:43:34 【Former World Record & Personal Best】(6 Years ago)</li>
-        <li>Harry Potter and the Deathly Hallows: Part 2 in 1:45:08 【Former World Record】(7 Years ago)</li>
-        <li>Harry Potter and the Deathly Hallows: Part 2 in 1:46:14 【Former World Record & First Personal Best】(7 Years ago)</li>
+    <div class="records4">
+        <table>
+            <thead>
+                <tr>
+                    <th>Game</th>
+                    <th>Category</th>
+                    <th>Time</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>@Model.GameName[3]</td>
+                    <td>@Model.Category[0]</td>
+                    <td>@Model.HarryPotterRecords[0]</td>
+                    <td>Unknown</td>
+                    <td>Personal Best</td>
+                </tr>
+                <tr>
+                    <td>@Model.GameName[3]</td>
+                    <td>@Model.Category[0]</td>
+                    <td>@Model.HarryPotterRecords[1]</td>
+                    <td>December 8, 2017</td>
+                    <td>Personal Best</td>
+                </tr>
+                <tr>
+                    <td>@Model.GameName[3]</td>
+                    <td>@Model.Category[0]</td>
+                    <td>@Model.HarryPotterRecords[2]</td>
+                    <td>August 22, 2018</td>
+                    <td>Personal Best</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
 

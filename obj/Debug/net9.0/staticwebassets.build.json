@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "GLa1C3ZT+aN85eTzy0+02IHvgm6IdgyCoBeN7REW7Rw=",
+  "Hash": "XXxzvU+507F8oxYQE0afKv/aOYKk01aoKYtE85/1xWA=",
   "Source": "Website",
   "BasePath": "_content/Website",
   "Mode": "Default",
@@ -185,12 +185,12 @@
       "OriginalItemSpec": "C:\\Users\\Tylox\\source\\repos\\Website\\Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\Tylox\\source\\repos\\Website\\Website\\obj\\Debug\\net9.0\\compressed\\41w4dtz47h-4alhwwdymo.gz",
+      "Identity": "C:\\Users\\Tylox\\source\\repos\\Website\\Website\\obj\\Debug\\net9.0\\compressed\\41w4dtz47h-dl324j0g24.gz",
       "SourceId": "Website",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Tylox\\source\\repos\\Website\\Website\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/Website",
-      "RelativePath": "css/Home#[.{fingerprint=4alhwwdymo}]?.css.gz",
+      "RelativePath": "css/Home#[.{fingerprint=dl324j0g24}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -199,8 +199,8 @@
       "RelatedAsset": "C:\\Users\\Tylox\\source\\repos\\Website\\Website\\wwwroot\\css\\Home.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "xildpaif85",
-      "Integrity": "x1AaNVYgsMHyKfLZmNeHO/dHhHWL7nEM56pJhkmwsQQ=",
+      "Fingerprint": "7ezz6y8gj5",
+      "Integrity": "76sg37OtEdwc20Axfn5IuyEBRXscw+3aytEOTp3EZK8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Tylox\\source\\repos\\Website\\Website\\wwwroot\\css\\Home.css"
@@ -1564,8 +1564,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "4alhwwdymo",
-      "Integrity": "/HVD2xanrz1Anwj3Sf1lftvMHII6u4Z8vnjzh4gtEzY=",
+      "Fingerprint": "dl324j0g24",
+      "Integrity": "sS4oW1DuVrkGIWE8pcdpeLtSJZ4wkF9UU8hzF3LL+1g=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Home.css"
@@ -3572,13 +3572,13 @@
       ]
     },
     {
-      "Route": "css/Home.4alhwwdymo.css",
-      "AssetFile": "C:\\Users\\Tylox\\source\\repos\\Website\\Website\\obj\\Debug\\net9.0\\compressed\\41w4dtz47h-4alhwwdymo.gz",
+      "Route": "css/Home.css",
+      "AssetFile": "C:\\Users\\Tylox\\source\\repos\\Website\\Website\\obj\\Debug\\net9.0\\compressed\\41w4dtz47h-dl324j0g24.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000949667616"
+          "Quality": "0.000930232558"
         }
       ],
       "ResponseHeaders": [
@@ -3588,19 +3588,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1052"
+          "Value": "1074"
         },
         {
           "Name": "ETag",
-          "Value": "\"x1AaNVYgsMHyKfLZmNeHO/dHhHWL7nEM56pJhkmwsQQ=\""
+          "Value": "\"76sg37OtEdwc20Axfn5IuyEBRXscw+3aytEOTp3EZK8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 10:43:23 GMT"
+          "Value": "Thu, 08 May 2025 20:53:06 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -3616,26 +3616,18 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"/HVD2xanrz1Anwj3Sf1lftvMHII6u4Z8vnjzh4gtEzY=\""
+          "Value": "W/\"sS4oW1DuVrkGIWE8pcdpeLtSJZ4wkF9UU8hzF3LL+1g=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "4alhwwdymo"
-        },
-        {
-          "Name": "label",
-          "Value": "css/Home.css"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-/HVD2xanrz1Anwj3Sf1lftvMHII6u4Z8vnjzh4gtEzY="
+          "Value": "sha256-sS4oW1DuVrkGIWE8pcdpeLtSJZ4wkF9UU8hzF3LL+1g="
         }
       ]
     },
     {
-      "Route": "css/Home.4alhwwdymo.css",
+      "Route": "css/Home.css",
       "AssetFile": "C:\\Users\\Tylox\\source\\repos\\Website\\Website\\wwwroot\\css\\Home.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3645,7 +3637,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4250"
+          "Value": "4755"
         },
         {
           "Name": "Content-Type",
@@ -3653,11 +3645,156 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"/HVD2xanrz1Anwj3Sf1lftvMHII6u4Z8vnjzh4gtEzY=\""
+          "Value": "\"sS4oW1DuVrkGIWE8pcdpeLtSJZ4wkF9UU8hzF3LL+1g=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 10:43:23 GMT"
+          "Value": "Thu, 08 May 2025 20:53:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-sS4oW1DuVrkGIWE8pcdpeLtSJZ4wkF9UU8hzF3LL+1g="
+        }
+      ]
+    },
+    {
+      "Route": "css/Home.css.gz",
+      "AssetFile": "C:\\Users\\Tylox\\source\\repos\\Website\\Website\\obj\\Debug\\net9.0\\compressed\\41w4dtz47h-dl324j0g24.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1074"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"76sg37OtEdwc20Axfn5IuyEBRXscw+3aytEOTp3EZK8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 20:53:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-76sg37OtEdwc20Axfn5IuyEBRXscw+3aytEOTp3EZK8="
+        }
+      ]
+    },
+    {
+      "Route": "css/Home.dl324j0g24.css",
+      "AssetFile": "C:\\Users\\Tylox\\source\\repos\\Website\\Website\\obj\\Debug\\net9.0\\compressed\\41w4dtz47h-dl324j0g24.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000930232558"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1074"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"76sg37OtEdwc20Axfn5IuyEBRXscw+3aytEOTp3EZK8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 20:53:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"sS4oW1DuVrkGIWE8pcdpeLtSJZ4wkF9UU8hzF3LL+1g=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dl324j0g24"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Home.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-sS4oW1DuVrkGIWE8pcdpeLtSJZ4wkF9UU8hzF3LL+1g="
+        }
+      ]
+    },
+    {
+      "Route": "css/Home.dl324j0g24.css",
+      "AssetFile": "C:\\Users\\Tylox\\source\\repos\\Website\\Website\\wwwroot\\css\\Home.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4755"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sS4oW1DuVrkGIWE8pcdpeLtSJZ4wkF9UU8hzF3LL+1g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 20:53:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3667,7 +3804,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "4alhwwdymo"
+          "Value": "dl324j0g24"
         },
         {
           "Name": "label",
@@ -3675,13 +3812,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-/HVD2xanrz1Anwj3Sf1lftvMHII6u4Z8vnjzh4gtEzY="
+          "Value": "sha256-sS4oW1DuVrkGIWE8pcdpeLtSJZ4wkF9UU8hzF3LL+1g="
         }
       ]
     },
     {
-      "Route": "css/Home.4alhwwdymo.css.gz",
-      "AssetFile": "C:\\Users\\Tylox\\source\\repos\\Website\\Website\\obj\\Debug\\net9.0\\compressed\\41w4dtz47h-4alhwwdymo.gz",
+      "Route": "css/Home.dl324j0g24.css.gz",
+      "AssetFile": "C:\\Users\\Tylox\\source\\repos\\Website\\Website\\obj\\Debug\\net9.0\\compressed\\41w4dtz47h-dl324j0g24.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3690,7 +3827,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1052"
+          "Value": "1074"
         },
         {
           "Name": "Content-Type",
@@ -3698,11 +3835,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"x1AaNVYgsMHyKfLZmNeHO/dHhHWL7nEM56pJhkmwsQQ=\""
+          "Value": "\"76sg37OtEdwc20Axfn5IuyEBRXscw+3aytEOTp3EZK8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 10:43:23 GMT"
+          "Value": "Thu, 08 May 2025 20:53:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3720,7 +3857,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "4alhwwdymo"
+          "Value": "dl324j0g24"
         },
         {
           "Name": "label",
@@ -3728,144 +3865,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-x1AaNVYgsMHyKfLZmNeHO/dHhHWL7nEM56pJhkmwsQQ="
-        }
-      ]
-    },
-    {
-      "Route": "css/Home.css",
-      "AssetFile": "C:\\Users\\Tylox\\source\\repos\\Website\\Website\\obj\\Debug\\net9.0\\compressed\\41w4dtz47h-4alhwwdymo.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000949667616"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1052"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"x1AaNVYgsMHyKfLZmNeHO/dHhHWL7nEM56pJhkmwsQQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 10:43:23 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"/HVD2xanrz1Anwj3Sf1lftvMHII6u4Z8vnjzh4gtEzY=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-/HVD2xanrz1Anwj3Sf1lftvMHII6u4Z8vnjzh4gtEzY="
-        }
-      ]
-    },
-    {
-      "Route": "css/Home.css",
-      "AssetFile": "C:\\Users\\Tylox\\source\\repos\\Website\\Website\\wwwroot\\css\\Home.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "4250"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"/HVD2xanrz1Anwj3Sf1lftvMHII6u4Z8vnjzh4gtEzY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 10:43:23 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-/HVD2xanrz1Anwj3Sf1lftvMHII6u4Z8vnjzh4gtEzY="
-        }
-      ]
-    },
-    {
-      "Route": "css/Home.css.gz",
-      "AssetFile": "C:\\Users\\Tylox\\source\\repos\\Website\\Website\\obj\\Debug\\net9.0\\compressed\\41w4dtz47h-4alhwwdymo.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1052"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"x1AaNVYgsMHyKfLZmNeHO/dHhHWL7nEM56pJhkmwsQQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 10:43:23 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-x1AaNVYgsMHyKfLZmNeHO/dHhHWL7nEM56pJhkmwsQQ="
+          "Value": "sha256-76sg37OtEdwc20Axfn5IuyEBRXscw+3aytEOTp3EZK8="
         }
       ]
     },

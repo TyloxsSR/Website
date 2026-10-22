@@ -2,20 +2,21 @@ using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Website.Helpers;
 using Website.Models;
+using Microsoft.Data.SqlClient;
 
 namespace Website.Controllers;
 
 public class HomeController : Controller
-{
+{    
     private readonly ILogger<HomeController> _logger;
 
     public HomeController(ILogger<HomeController> logger)
     {
-        _logger = logger;
+        _logger = logger; // cant even remember what this was for.
     }
 
     public IActionResult Index()
-    {
+    { 
         int Age = AboutMeHelper.Calculate(new DateTime(2001, 4, 6));
         int DeveloperAge = AboutMeHelper.Calculate(new DateTime(2023, 2, 28));
         string ElementarySchoolBio = AboutMeHelper.ElementarySummarized();

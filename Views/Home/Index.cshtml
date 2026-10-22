@@ -15,83 +15,101 @@
 </head>
 
 <html>
-
+    <!--SHOOTING STAR-->
+<div class="shooting-star"></div>
+<div class="shooting-star delay-1"></div>
+<div class="shooting-star delay-2"></div>
+<div class="shooting-star delay-3"></div>
 <!--Image-->
-<div class="scroll">
-    <img class="portrait" src="/img/portrait.png" title="A picture of me! " alt="A picture of me!"> 
+<div class="hero">
+    <img class="portrait" src="/img/portrait.png" alt="A picture of me!">
+
+    <div class="about">
+        <h2>About Me</h2>
+        <p>Age: @Model.MyAge</p>
+        <p>Self Taught Programmer (WIP)</p>
+        <p>Years in learning: @Model.DeveloperAge</p>
+
+        <div class="button-row">
+            <button class="btn" onclick="PortfolioLink(this)" value="https://localhost:7256/portfolio">Portfolio</button>
+            <button class="btn" onclick="SpecsLink(this)" value="https://localhost:7256/specs">PC Setup</button>
+        </div>
+    </div>
 </div>
 
-<!--About-->
-<p class="biography">ABOUT ME:
-    <p class="biography">Age: @Model.MyAge</p>                                  
-    <p class="biography">Self Taught Programmer (WIP)</p>
-    <p class="biography">Years in learning: @Model.DeveloperAge</p>
-    
-    <!--Buttons-->
-
-    <div class="btnOne">
-        <button class="btn" onclick="PortfolioLink(this)" value="https://localhost:7256/portfolio">Portfolio</button>
-    </div>
-
-    <div class="btnTwo">
-        <button class="btn" onclick="SpecsLink(this)" value="https://localhost:7256/specs">PC Setup</button>
-    </div>
 
     <!---Education--->
-    <div class="education-content">
-        <h1 class="education-header">Education</h1>
+<section class="education">
+    <h1>Education</h1>
 
-        <div class="elementary-header">
+    @* <div class="edu-grid">
+        <div class="edu-card">
             <h2>Elementary</h2>
+            <p>@Model.ElementaryBio</p>
         </div>
 
-        <div class="elementary-bio">
-            <p>
-                @Model.ElementaryBio            
-            </p>
-        </div>
-
-        <div class="middle-header">
+        <div class="edu-card">
             <h2>Middle</h2>
+            <p>@Model.MiddleBio</p>
         </div>
 
-        <div class="middle-bio">
-            <p>
-                @Model.MiddleBio
-            </p>
-        </div>
-
-        <div class="high-header">
+        <div class="edu-card">
             <h2>High</h2>
+            <p>@Model.HighBio</p>
+        </div>
+    </div>
+
+    <div class="edu-images">
+        <img src="/img/muller.png">
+        <img src="/img/davidson.png">
+        <img src="/img/alonso.png">
+    </div> *@
+    <div class="edu-grid">
+        <div class="edu-card">
+            <img src="/img/muller.png" alt="Muller Elementary">
+
+            <h2>Elementary</h2>
+
+            <p>@Model.ElementaryBio</p>
         </div>
 
-        <div class="high-bio">
-            <p>
-                @Model.HighBio
-            </p>
+        <div class="edu-card">
+            <img src="/img/davidson.png" alt="Davidson Middle">
+
+            <h2>Middle</h2>
+
+            <p>@Model.MiddleBio</p>
         </div>
 
+        <div class="edu-card">
+            <img src="/img/alonso.png" alt="Alonso High">
 
-        <img class="muller" src="~/img/muller.png" />
-        <img class="davidsen" src="~/img/davidson.png" />
-        <img class="alonso" src="~/img/alonso.png" />
+            <h2>High</h2>
 
+            <p>@Model.HighBio</p>
+        </div>
+    </div>
 
-
-
-        <h1 class="hobbies-header">Hobbies</h1>
-
-
-        <p class="speedrunner-bio">
-            @Model.SpeedrunnerBio
-        </p>
-        @* TODO: MAKE TABLES FOR MY RECORDS*@
-        <div class="gow">
-            <div class="speedrunning-img">
-                <img src="/img/gow.png">
-            </div>
+    
+</section>
 
 
+<section class="hobbies">
+
+    <!-- Header -->
+    <h1 class="hobbyHeader">Hobbies</h1>
+
+    <!-- Bio -->
+    <p class="speedrunner-bio">
+        @Model.SpeedrunnerBio
+    </p>
+
+    <!-- Grid of hobby items -->
+    <div class="hobby-grid">
+
+        <!-- God of War -->
+        <div class="hobby-item">
+            <img src="/img/gow.png" alt="God of War Speedrun">
 
             <div class="records">
                 <table>
@@ -106,7 +124,6 @@
                     </thead>
 
                     <tbody>
-
                         <tr>
                             <td>@Model.GameName[0]</td>
                             <td>@Model.Category[0]</td>
@@ -128,233 +145,230 @@
                             <td>April 6, 2019</td>
                             <td>World Record + Personal Best</td>
                         </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-    
-    <div class="days-gone">
-        <div class="speedrunning-img">
-            <img src="/img/daysgone.png">
+                    </tbody>
+                </table>
+            </div>
         </div>
 
-        <div class="records2">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Game</th>
-                        <th>Category</th>
-                        <th>Time</th>
-                        <th>Date</th>
-                        <th>Status</th>
-                        </div>
-                    </tr>
-                </thead>
+        <!-- Days Gone -->
+        <div class="hobby-item">
+            <img src="/img/daysgone.png" alt="Days Gone Speedrun">
 
-                <tbody>
+            <div class="records">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Game</th>
+                            <th>Category</th>
+                            <th>Time</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
 
-                    <tr>
-                        <td>@Model.GameName[1]</td>
-                        <td>@Model.Category[0]</td>
-                        <td>@Model.DaysGoneRecords</td>
-                        <td>March 7, 2019</td>
-                        <td>Personal Best</td>
-                    </tr>
-                </tbody>
-            </table>
+                    <tbody>
+                        <tr>
+                            <td>@Model.GameName[1]</td>
+                            <td>@Model.Category[0]</td>
+                            <td>@Model.DaysGoneRecords</td>
+                            <td>March 7, 2019</td>
+                            <td>Personal Best + World Record</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-    </div>
-    
 
-    <div class="zelda">
-        <img src="/img/tp.png">
-    </div>
+        <!-- Zelda Twilight Princess -->
+        <div class="hobby-item">
+            <img src="/img/tp.png" alt="Zelda Twilight Princess Speedrun">
 
-    <div class="records3">
-        <!---Does this class attribute break dry?--->
-        <table>
-            <thead>
-                <tr>
-                    <th>Game</th>
-                    <th>Category</th>
-                    <th>Time</th>
-                    <th>Date</th>
-                    <th>Status</th>
-                </tr>
-            </thead>
+            <div class="records">
+                <table>
+                    <!-- Keep your existing Zelda rows here -->
+                    <thead>
+                        <tr>
+                            <th>Game</th>
+                            <th>Category</th>
+                            <th>Time</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
 
-            <tbody>
-                <tr>
-                    <td>@Model.GameName[2]</td>
-                    <td>@Model.Category[0]</td>
-                    <td>@Model.TPAnyPercentWithAmiiboRecords[0]</td>
-                    <td>7 Years Ago</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>@Model.GameName[2]</td>
-                    <td>@Model.Category[1]</td>
-                    <td>@Model.TPAnyPercentRecords</td>
-                    <td>7 Years Ago</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>@Model.GameName[2]</td>
-                    <td>@Model.Category[0]</td>
-                    <td>@Model.TPAnyPercentWithAmiiboRecords[1]</td>
-                    <td>7 Years Ago</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>@Model.GameName[2]</td>
-                    <td>@Model.Category[0]</td>
-                    <td>@Model.TPAnyPercentWithAmiiboRecords[2]</td>
-                    <td>7 Years Ago</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>@Model.GameName[2]</td>
-                    <td>@Model.Category[0]</td>
-                    <td>@Model.TPAnyPercentWithAmiiboRecords[3]</td>
-                    <td>7 Years Ago</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>@Model.GameName[2]</td>
-                    <td>@Model.Category[0]</td>
-                    <td>@Model.TPAnyPercentWithAmiiboRecords[4]</td>
-                    <td>7 Years Ago</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>@Model.GameName[2]</td>
-                    <td>@Model.Category[0]</td>
-                    <td>@Model.TPAnyPercentWithAmiiboRecords[5]</td>
-                    <td>7 Years Ago</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>@Model.GameName[2]</td>
-                    <td>@Model.Category[0]</td>
-                    <td>@Model.TPAnyPercentWithAmiiboRecords[6]</td>
-                    <td>6 Years Ago</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>@Model.GameName[2]</td>
-                    <td>@Model.Category[0]</td>
-                    <td>@Model.TPAnyPercentWithAmiiboRecords[7]</td>
-                    <td>6 Years Ago</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>@Model.GameName[2]</td>
-                    <td>@Model.Category[2]</td>
-                    <td>@Model.TP100PercentRecords</td>
-                    <td>7 Years Ago</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>@Model.GameName[2]</td>
-                    <td>@Model.Category[3]</td>
-                    <td>@Model.TPAllDungeonsRecords[0]</td>
-                    <td>7 Years Ago</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>@Model.GameName[2]</td>
-                    <td>@Model.Category[3]</td>
-                    <td>@Model.TPAllDungeonsRecords[1]</td>
-                    <td>7 Years Ago</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>@Model.GameName[2]</td>
-                    <td>@Model.Category[3]</td>
-                    <td>@Model.TPAllDungeonsRecords[2]</td>
-                    <td>6 Years Ago</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>@Model.GameName[2]</td>
-                    <td>@Model.Category[4]</td>
-                    <td>@Model.TPGlitchlessRecords</td>
-                    <td>6 Years Ago</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>@Model.GameName[2]</td>
-                    <td>@Model.Category[5]</td>
-                    <td>@Model.TPGoronMinesRTARecords[0]</td>
-                    <td>7 Years Ago</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>@Model.GameName[2]</td>
-                    <td>@Model.Category[5]</td>
-                    <td>@Model.TPGoronMinesRTARecords[1]</td>
-                    <td>7 Years Ago</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>@Model.GameName[2]</td>
-                    <td>@Model.Category[5]</td>
-                    <td>@Model.TPGoronMinesRTARecords[2]</td>
-                    <td>6 Years Ago</td>
-                    <td></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+                    <tbody>
+    <tr>
+        <td>@Model.GameName[2]</td>
+        <td>@Model.Category[0]</td>
+        <td>@Model.TPAnyPercentWithAmiiboRecords[0]</td>
+        <td>7 Years Ago</td>
+        <td>Personal Best</td>
+    </tr>
 
-    <div class="harry-potter">
-        <img src="/img/harrypotter.png">
-    </div>
+    <tr>
+        <td>@Model.GameName[2]</td>
+        <td>@Model.Category[1]</td>
+        <td>@Model.TPAnyPercentRecords</td>
+        <td>7 Years Ago</td>
+        <td>Personal Best</td>
+    </tr>
 
-    <div class="records4">
-        <table>
-            <thead>
-                <tr>
-                    <th>Game</th>
-                    <th>Category</th>
-                    <th>Time</th>
-                    <th>Date</th>
-                    <th>Status</th>
-                </tr>
-            </thead>
+    <tr>
+        <td>@Model.GameName[2]</td>
+        <td>@Model.Category[0]</td>
+        <td>@Model.TPAnyPercentWithAmiiboRecords[1]</td>
+        <td>7 Years Ago</td>
+        <td>Personal Best</td>
+    </tr>
 
-            <tbody>
+    <tr>
+        <td>@Model.GameName[2]</td>
+        <td>@Model.Category[0]</td>
+        <td>@Model.TPAnyPercentWithAmiiboRecords[2]</td>
+        <td>7 Years Ago</td>
+        <td>Personal Best</td>
+    </tr>
 
-                <tr>
-                    <td>@Model.GameName[3]</td>
-                    <td>@Model.Category[0]</td>
-                    <td>@Model.HarryPotterRecords[0]</td>
-                    <td>Unknown</td>
-                    <td>Personal Best</td>
-                </tr>
-                <tr>
-                    <td>@Model.GameName[3]</td>
-                    <td>@Model.Category[0]</td>
-                    <td>@Model.HarryPotterRecords[1]</td>
-                    <td>December 8, 2017</td>
-                    <td>Personal Best</td>
-                </tr>
-                <tr>
-                    <td>@Model.GameName[3]</td>
-                    <td>@Model.Category[0]</td>
-                    <td>@Model.HarryPotterRecords[2]</td>
-                    <td>August 22, 2018</td>
-                    <td>Personal Best</td>
-                </tr>
-            </tbody>
-        </table>
+    <tr>
+        <td>@Model.GameName[2]</td>
+        <td>@Model.Category[0]</td>
+        <td>@Model.TPAnyPercentWithAmiiboRecords[3]</td>
+        <td>7 Years Ago</td>
+        <td>Personal Best</td>
+    </tr>
+
+    <tr>
+        <td>@Model.GameName[2]</td>
+        <td>@Model.Category[0]</td>
+        <td>@Model.TPAnyPercentWithAmiiboRecords[4]</td>
+        <td>7 Years Ago</td>
+        <td>Personal Best</td>
+    </tr>
+
+    <tr>
+        <td>@Model.GameName[2]</td>
+        <td>@Model.Category[0]</td>
+        <td>@Model.TPAnyPercentWithAmiiboRecords[5]</td>
+        <td>7 Years Ago</td>
+        <td>Personal Best</td>
+    </tr>
+
+    <tr>
+        <td>@Model.GameName[2]</td>
+        <td>@Model.Category[0]</td>
+        <td>@Model.TPAnyPercentWithAmiiboRecords[6]</td>
+        <td>6 Years Ago</td>
+        <td>Personal Best</td>
+    </tr>
+
+    <tr>
+        <td>@Model.GameName[2]</td>
+        <td>@Model.Category[0]</td>
+        <td>@Model.TPAnyPercentWithAmiiboRecords[7]</td>
+        <td>6 Years Ago</td>
+        <td>Personal Best</td>
+    </tr>
+
+    <tr>
+        <td>@Model.GameName[2]</td>
+        <td>@Model.Category[2]</td>
+        <td>@Model.TP100PercentRecords</td>
+        <td>7 Years Ago</td>
+        <td>Personal Best</td>
+    </tr>
+
+    <tr>
+        <td>@Model.GameName[2]</td>
+        <td>@Model.Category[3]</td>
+        <td>@Model.TPAllDungeonsRecords[0]</td>
+        <td>7 Years Ago</td>
+        <td>Personal Best</td>
+    </tr>
+
+    <tr>
+        <td>@Model.GameName[2]</td>
+        <td>@Model.Category[3]</td>
+        <td>@Model.TPAllDungeonsRecords[1]</td>
+        <td>7 Years Ago</td>
+        <td>Personal Best</td>
+    </tr>
+
+    <tr>
+        <td>@Model.GameName[2]</td>
+        <td>@Model.Category[3]</td>
+        <td>@Model.TPAllDungeonsRecords[2]</td>
+        <td>6 Years Ago</td>
+        <td>Personal Best</td>
+    </tr>
+
+    <tr>
+        <td>@Model.GameName[2]</td>
+        <td>@Model.Category[4]</td>
+        <td>@Model.TPGlitchlessRecords</td>
+        <td>6 Years Ago</td>
+        <td>Personal Best</td>
+    </tr>
+
+    <tr>
+        <td>
+                </table>
+            </div>
+        </div>
+
+        <!-- Harry Potter -->
+        <div class="hobby-item">
+            <img src="/img/harrypotter.png" alt="Harry Potter Speedrun">
+
+            <div class="records">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Game</th>
+                            <th>Category</th>
+                            <th>Time</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>@Model.GameName[3]</td>
+                            <td>@Model.Category[0]</td>
+                            <td>@Model.HarryPotterRecords[0]</td>
+                            <td>Unknown</td>
+                            <td>Personal Best</td>
+                        </tr>
+                        <tr>
+                            <td>@Model.GameName[3]</td>
+                            <td>@Model.Category[0]</td>
+                            <td>@Model.HarryPotterRecords[1]</td>
+                            <td>December 8, 2017</td>
+                            <td>Personal Best</td>
+                        </tr>
+                        <tr>
+                            <td>@Model.GameName[3]</td>
+                            <td>@Model.Category[0]</td>
+                            <td>@Model.HarryPotterRecords[2]</td>
+                            <td>August 22, 2018</td>
+                            <td>Personal Best</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
     </div>
 
+    <!-- Charity Events -->
+    <h3 class="comment">
+        I Have also participated in Speedrunning charity events:
+    </h3>
 
-    <h3 class="comment">I Have also participated in Speedrunning charity events:</h3>
-
-    <div class="charity-speedruns">
+    <ul class="charity-speedruns">
         <li>Trashathon 2017</li>
         <li>Awesome Games Done Quick 2020 (Attended)</li>
-    </div>
-</div>
+    </ul>
+
+</section>
+

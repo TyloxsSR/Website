@@ -1,13 +1,106 @@
-﻿
+﻿.shooting-star {
+    position: fixed;
+    top: -100px;
+    left: -100px;
+    width: 250px;
+    height: 2px;
+    background: linear-gradient( 90deg, rgba(255,255,255,0), rgba(255,255,255,1) );
+    border-radius: 999px;
+    transform: rotate(-35deg);
+    pointer-events: none;
+    animation: shootingStar 8s linear infinite;
+    z-index: -1;
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 20px white;
+}
+.delay-1 {
+    animation-delay: 2s;
+    top: 10%;
+}
+
+.delay-2 {
+    animation-delay: 5s;
+    top: 30%;
+}
+
+.delay-3 {
+    animation-delay: 7s;
+    top: 60%;
+}
+@keyframes shootingStar {
+
+    0% {
+        opacity: 0;
+        transform: translateX(0) translateY(0) rotate(35deg);
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(2200px) translateY(1200px) rotate(35deg);
+    }
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: radial-gradient( rgba(255,255,255,.08), transparent 70% );
+    filter: blur(60px);
+    pointer-events: none;
+}
+
+body {
+    background:
+    /* Pink nebula */
+    radial-gradient(circle at 20% 20%, rgba(255,0,170,0.18), transparent 25%),
+    /* Cyan nebula */
+    radial-gradient(circle at 80% 70%, rgba(0,200,255,0.18), transparent 25%),
+    /* Large glowing stars */
+    radial-gradient( rgba(255,255,255,0.15) 2px, transparent 3px ),
+    /* Small stars */
+    radial-gradient( rgba(255,255,255,0.8) 1px, transparent 1px ),
+    /* Space */
+    linear-gradient( 135deg, #0f172a, #1e1b4b, #111827 );
+    background-size: auto, auto, 120px 120px, 40px 40px, auto;
+}
+    body::after {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background: radial-gradient( white 1px, transparent 2px );
+        background-size: 75px 75px;
+        opacity: .6;
+        animation: twinkle 4s ease-in-out infinite;
+        pointer-events: none;
+
+        @keyframes twinkle {
+            0%, 100% {
+                opacity: .3;
+            }
+
+            50% {
+                opacity: .8;
+            }
+        }
+    }
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-top: 80px;
+}
+
 .portrait {
-    border: 2px solid rgb(0, 0, 0);
-    border-radius: 200px;
-    display: block;
-    margin-top: 100px;
-    position: relative;
-    top: -10px;
-    left: 515px;
-    height: 300px;
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.4);
 }
 
 @keyframes appear {
@@ -26,22 +119,35 @@ to {
     animation: appear 2s linear;
 }
 
+.about {
+    background: #1e1e1e;
+    padding: 30px;
+    border-radius: 12px;
+    width: 350px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+    .about h2 {
+        margin-top: 0;
+        font-size: 28px;
+        color: #fff;
+    }
+
+    .about p {
+        margin: 8px 0;
+        color: #ccc;
+    }
+
+.button-row {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
 p.biography {
     font-weight: 900;
     text-align: center;
 
-}
-
-.btnOne {
-    position: relative;
-    left: 600px;
-
-}
-
-.btnTwo {
-    position: relative;
-    left: 370px;
-    top: -254px;
 }
 
 .rows {
@@ -50,7 +156,7 @@ p.biography {
 }
 
 .btn {
-    margin: 100px;
+    margin: 0;
     padding: 15px 40px;
     border: none;
     outline: none;
@@ -120,173 +226,167 @@ p.biography {
 
 /*Education Section*/
 
-.education-content {
-    position: relative;
-    top: -150px;
+.edu-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
 }
 
-body {
-    margin: 0 auto;
-    padding: 0;
+.education {
+    margin-top: 120px;
+    text-align: center;
 }
 
-.education-header{
-    text-align:center;
+.edu-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
 }
 
-.elementary-header {
-    border: 3px solid transparent;
-    width: 180px;
-    position: relative;
-    top: 30px;
+.edu-card {
+    background: #1e1e1e;
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    width: 350px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+    .edu-card h2 {
+        margin: 10px 0;
+    }
+
+
+.edu-images {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
 }
 
-.middle-header {
-    border: 3px solid transparent;
-    width: 110px;
-    position: relative;
-    top: -306px;
-    left: 590px;
-}
+    .edu-images img {
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
 
-.high-header {
-    border: 3px solid transparent;
-    width: 80px;
-    position: relative;
-    top: -593px;
-    left: 1150px;
-}
-
-.elementary-bio {
-    border: 3px solid transparent;
-    width: 500px;
-    margin-left: -150px;
-    position: relative;
-    top: 50px;
-}
-
-.middle-bio {
-    border: 3px solid transparent;
-    width: 500px;
-    position: relative;
-    top: -285px;
-    left: 400px;
-}
-
-.high-bio {
-    border: 3px solid transparent;
-    width: 500px;
-    position: relative;
-    top: -572px;
-    left: 950px;
-}
-
-.muller {
-    border-radius: 10px;
-    position: relative;
-    width: 500px;
-    height: 300px;
-    top: -560px;
-    right: 150px;
-}
-
-.davidsen {
-    border-radius: 10px;
-    position: relative;
-    width: 500px;
-    height: 300px;
-    top: -560px;
-    right: 110px;
-}
-
-.alonso {
-    border-radius: 10px;
-    position: relative;
-    width: 500px;
-    height: 300px;
-    top: -860px;
-    left: 950px;
-}
 
 /*Hobbies*/
-.hobbies-header {
-    position: relative;
-    top: -750px;
-    left: 560px;
+/* ============================
+   HOBBIES SECTION
+   ============================ */
+.hobbyHeader {
+    color: white;
+}
+.hobbies {
+    margin-top: 120px;
+    text-align: center;
+    padding: 20px;
+
 }
 
+    .hobbies h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        color: antiquewhite;
+    }
 
+
+/* Bio paragraph */
 .speedrunner-bio {
-    border: 3px solid transparent;
-    width: 600px;
-    position: relative;
-    top: -700px;
-    left: 350px;
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ccc;
+    margin-bottom: 40px;
 }
 
-/*Speedrunning Images*/
-.speedrunning-img {
-    position: relative;
-    top: -650px;
-    left: 80px;
+/* Grid layout for all hobby items */
+.hobby-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 40px;
 }
 
-.zelda {
-    position: relative;
-    top: -650px;
-    left: 45px;
+/* Individual hobby card */
+.hobby-item {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 12px;
+    width: 700px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    transition: transform 0.2s ease;
 }
 
-.harry-potter {
-    position: relative;
-    top: -650px;
-    left: -30px;
+.hobby-item:hover {
+    transform: translateY(-5px);
 }
 
+/* Image on the left */
+    .hobby-item img {
+        width: 300px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 10px;
+        flex-shrink: 0;
+    }
+
+/* Table on the right */
 .records {
-    text-align: center;
-    position: relative;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 350px;
-    top: -650px;
+    flex: 1;
+    max-width: 400px;
+    overflow-wrap: anywhere;
 }
 
-.records2 {
-    text-align: center;
-    position: relative;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 440px;
-    top: -650px;
+/* Tables */
+.records table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #ddd;
+    font-size: 13px;
 }
 
-.records3 {
-    text-align: center;
-    position: relative;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 330px;
-    top: -650px;
-}
+    .records th,
+    .records td {
+        padding: 8px;
+        border-bottom: 1px solid #333;
+        word-wrap: break-word;
+        white-space: normal;
+    }
 
-.records4 {
-    text-align: center;
-    position: relative;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 350px;
-    top: -650px;
-}
+    .records th {
+        color: #fff;
+        font-weight: 600;
+        background: #2a2a2a;
+    }
 
+/* Charity section */
 .comment {
-    text-align: center;
-    position: relative;
-    top: -630px;
+    margin-top: 60px;
+    font-size: 20px;
+    color: black;
 }
 
 .charity-speedruns {
-    text-align: center;
-    position: relative;
-    top: -600px;
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+    .charity-speedruns li {
+        color: #ccc;
+        font-size: 18px;
+        margin: 8px 0;
+    }
+.education h1 {
+    color: white;
 }

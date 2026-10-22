@@ -32,7 +32,7 @@ namespace Website.Helpers
 
         public static string SpeedrunnerSummarized()
         {
-            string summary = "I have many hobbies! I really love to exercise to keep myself fit!\r\n        One of my bigger hobbies that I used to do was something called Speedrunning.\r\n        Which I brefly mentioned before!\r\n        This is a competitive E-sport with the goal of beating a game as fast\r\n        as humanly possible. These personal bests and records are recorded on\r\n        websites to track what the world record may be at any given point in time.\r\n        My Speedrunning career lasted for 4 years during 2017-2020. I stopped due to time constraints!\r\n        Overall, I have achieved 10 World Records during my time as a speedrunner for some pretty big games!\r\n        Below is a comprehenive list of every big game I have ran; plus some honorable mentiones!";
+            string summary = "I have many hobbies! I really love to exercise to keep myself fit!\r\n        One of my bigger hobbies that I used to do was something called Speedrunning.\r\n        Which I brefly mentioned before!\r\n        This is a competitive E-sport with the goal of beating a game as fast\r\n        as humanly possible. These personal bests and records are recorded on\r\n        websites to track what the world record may be at any given point in time.\r\n        My Speedrunning career lasted for 4 years during 2017-2020. I stopped due to time constraints!\r\n        Overall, I have achieved 10 World Records during my time as a speedrunner for some pretty big games!\r\n        Below is a comprehenive list of every big game I have ran; plus some honorable mentions!";
             return summary;
         }
 
